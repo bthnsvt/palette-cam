@@ -9,7 +9,10 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSPhotoLibraryAddUsageDescription": "Renk paleti ekran görüntülerini galeriye kaydetmek için fotoğraf arşivinize ekleme izni gerekir."
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -37,6 +40,19 @@
           "dark": {
             "backgroundColor": "#000000"
           }
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Fotoğraf çekerek renk paleti çikarabilmek için kameraya erişim gerekiyor."
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Ekran görüntüsünü galeriye kaydetmek için fotoğraf arşivinize erişim gerekiyor.",
+          "savePhotosPermission": "Ekran görüntüsünü galeriye kaydetmek için izin gerekiyor."
         }
       ]
     ],
